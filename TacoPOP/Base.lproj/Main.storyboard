@@ -20,11 +20,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDc-iW-zQK" customClass="HeaderView" customModule="TacoPOP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taco-POP" translatesAutoresizingMaskIntoConstraints="NO" id="M4u-Yo-11t">
+                                        <rect key="frame" x="67" y="22" width="240" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="s8t-kA-1Zu"/>
+                                            <constraint firstAttribute="width" constant="240" id="uxd-nJ-rI4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.3411764706" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="M4u-Yo-11t" firstAttribute="centerY" secondItem="CDc-iW-zQK" secondAttribute="centerY" id="gcP-I9-yji"/>
+                                    <constraint firstItem="M4u-Yo-11t" firstAttribute="centerX" secondItem="CDc-iW-zQK" secondAttribute="centerX" id="k8u-Uh-TZz"/>
+                                    <constraint firstAttribute="height" constant="80" id="ua6-Cw-NVI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CDc-iW-zQK" secondAttribute="trailing" id="Ewn-kv-Y4l"/>
+                            <constraint firstItem="CDc-iW-zQK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HxH-XH-PMY"/>
+                            <constraint firstItem="CDc-iW-zQK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kvk-ez-XVO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="CDc-iW-zQK" id="eLK-wx-HMU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Taco-POP" width="490" height="100"/>
+    </resources>
 </document>
